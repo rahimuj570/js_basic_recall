@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a {
+            color: red;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="first" class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, obcaecati!</p>
+
+
+    <p id="b" onmouseover="ov()" onmouseout="out()" class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Illum, obcaecati!
+    </p>
+
+    <button onclick="cng()">cng</button>
+
+
+    <script>
+        function cng() {
+            let first_elem = document.getElementById('first');
+
+            first_elem.style.color = 'green'
+            first_elem.innerText = 'hhhhhhhhhhhhhh'
+
+        }
+
+        function ov() {
+            let first_elem = document.getElementById('b');
+
+            first_elem.style.color = 'green'
+        }
+
+        function out() {
+            let first_elem = document.getElementById('b');
+
+            first_elem.style.color = 'red'
+        }
+
+
+    </script>
+</body>
+
+
+</html>
