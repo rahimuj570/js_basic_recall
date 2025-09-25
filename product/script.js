@@ -23,7 +23,8 @@ function search() {
     let flag = false;
     Array.from(htmlProductsList.children).forEach(e => {
         if (e.innerText == name) {
-            e.setAttribute('class', 'h')
+            e.classList.add('h')
+            // e.setAttribute('class', 'h')
             flag = true;
             // e.remove()
         }
